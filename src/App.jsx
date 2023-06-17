@@ -21,7 +21,7 @@ export default class App extends Component {
             </div>
             <div className="p-2 mt-3">
             <Routes>
-            <Route path='/' element={<Home />} ></Route>
+            <Route path='/live-news' element={<Home />} ></Route>
             <Route path="/home" element={<Home />}></Route>
             <Route path="/business" element={<Business />}></Route>
             <Route path="/sport" element={<Sport />}></Route>

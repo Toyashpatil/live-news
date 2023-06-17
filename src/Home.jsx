@@ -25,7 +25,7 @@ export default class Home extends Component{
   }
 
   async componentDidMount(){
-    let url="https://newsapi.org/v2/top-headlines?country=in&apiKey=7218f140cb8149e5b72c24de88c2b52b";
+    let url=process.env.REACT_APP_NEWS_API;
     let data = await fetch(url);
     let ParsedData= await data.json();
     this.setState({articles:ParsedData.articles}); 
